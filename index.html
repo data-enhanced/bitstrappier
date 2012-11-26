@@ -10,6 +10,9 @@
 
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
+  <!-- Google Webfont -->
+  <link href='http://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet' type='text/css'>
+
 
     <!-- Commented out - update these with your own files -->
 
@@ -30,7 +33,7 @@
 
   <!--[if lt IE 7]><div class="alert">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</div><![endif]-->
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -38,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Site Name</a>
+          <a class="brand" href="#"><i class="icon-cogs"></i> BitBootstrappier!</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -58,9 +61,12 @@
               </li>
             </ul>
             <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
+              <form class="form-search">
+                <div class="input-append">
+                  <input type="text" class="input-medium" placeholder="Search this site">
+                  <button type="submit" class="btn">Search</button>
+                </div>
+              </form>
             </form>
           </div><!--/.nav-collapse -->
         </div>
@@ -71,8 +77,9 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Hi there! <i class="icon-cogs"></i></h1>
-        <p>Welcome to BitBootstrappier, a mashup of Twitter Bootstrap, the HTML5 Boilerplate, and other goodness. It's intended as a great way to get started with projects. Use at your own risk. No promises. No guarantees.</p>
+        <h1><i class="icon-cogs"></i> BitBootstrappier!</h1>
+        <p>a little mashup of Twitter Bootstrap, the HTML5 Boilerplate, and other goodness</p>
+        <p><small>Use at your own risk. No promises. No guarantees.</small></p>
         <p><a class="btn btn-primary btn-large"><i class="icon-home icon-white"></i> Learn more &raquo;</a></p>
       </div>
 
