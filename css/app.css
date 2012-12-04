@@ -84,3 +84,15 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
     padding-top: 0;
   }
 }
+
+@media (max-width: 640px) {
+  .hero-unit {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+  .hero-unit h1 {
+    font-size: 36px;
+  }
+}
