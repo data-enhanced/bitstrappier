@@ -1,9 +1,8 @@
-bitbootstrappier
+# BitBootstrappier
+Version 0.9
 ================
 
-Version 0.2
-
-Custom Bootstrap for quick-launching my projects
+Customized Bootstrap for quick-launching my projects
 
 David Cochran
 
