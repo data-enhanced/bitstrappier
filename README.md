@@ -1,4 +1,4 @@
-# BitBootstrappier
+# BitStrappier
 Version 0.9
 ================
 
