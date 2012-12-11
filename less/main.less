@@ -1,27 +1,37 @@
 /*!
- * Bootstrap v2.2.1
+ * BitBootstrappier 0.9.1
  *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
+ * Main LESS file for BitBootstrappier
  *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ * by David Cochran
+ *
  */
 
-// CSS Reset
+//
+// File and folder naming rationale
+//
+// bitbr- = BitBootsrappier custom LESS files
+// bs = current release of Twitter Bootstrap
+// bs2-2-1 = Bootstrap 2.2.1 release (in case a former version's code may work best)
+// fontaws = custom web font and icon font styles
+//
+
+// Reset
 @import "bs/reset.less";
 
-// Core variables and mixins
-// @import "bs/variables.less"; // Modify this for custom colors, font-sizes, etc
-@import "variables-bbstpr.less";
-@import "bs/mixins.less";
+// Variables and Mixins
+// @import "bs/variables.less"; // If you'd prefer Bootstrap's base variables
+
+		@import "bitbr-variables.less"; // BitBootstrappier custom variables
+
+@import "bs/mixins.less"; // Bootstrap's mixins
 
 // Grid system and page structure
 @import "bs/scaffolding.less";
 @import "bs/grid.less";
 @import "bs/layouts.less";
 
-	@import "layout-bbstpr.less"; // Custom layout styles
+		@import "bitbr-layout-tweaks.less"; // BitBootstrappier layout tweaks
 
 // Base CSS
 @import "bs/type.less";
@@ -30,12 +40,13 @@
 @import "bs/tables.less";
 
 // Components: common
-// @import "sprites.less";
-// Font Awesome
-@import "fa/font-awesome.less";
+// @import "sprites.less"; // commented out in favor of Icon Fonts
+
+		@import "fontaws/font-awesome.less"; // Font Awesome icon font
 
 @import "bs/dropdowns.less";
-	@import "dropdowns-bbstpr.less"; // BitBootstrappier customization
+
+		@import "bitbr-dropdown.less"; // BitBootstrappier customization
 
 @import "bs/wells.less";
 @import "bs/component-animations.less";
@@ -69,3 +80,45 @@
 
 // Utility classes
 @import "bs/utilities.less"; // Has to be last to override when necessary
+
+
+// Responsive Styles
+// -------------------------------------------------------------
+
+// IE10 Metro responsive
+// Required for Windows 8 Metro split-screen snapping with IE10
+// Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+
+@-ms-viewport{
+  width: device-width;
+}
+
+
+// RESPONSIVE CLASSES
+// ------------------
+
+@import "bs/responsive-utilities.less";
+
+
+// MEDIA QUERIES
+// ------------------
+
+// Large desktops
+@import "bs/responsive-1200px-min.less";
+
+// Tablets to regular desktops
+@import "bs/responsive-768px-979px.less";
+
+// Phones to portrait tablets and narrow desktops
+@import "bs/responsive-767px-max.less";
+
+
+// RESPONSIVE NAVBAR
+// ------------------
+
+// From 979px and below, show a button to toggle navbar contents
+@import "bs/responsive-navbar.less";
+
+// BitBootstrappier Custom
+
+@import "bitbr-responsive.less";

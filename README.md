@@ -14,6 +14,5 @@ Credits
 
 * Twitter Bootstrap
 * HTML5 Boilerplate
-* Font Awesome
+* Font Awesome Icon Font
 * Modernizr
-* Roots Theme
