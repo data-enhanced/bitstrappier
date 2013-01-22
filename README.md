@@ -1,12 +1,12 @@
 # BitStrappier
-Version 0.9
+Version 0.9.2
 ================
 
 Customized Bootstrap for quick-launching my projects
 
 David Cochran
 
-BitBrilliant.com
+aLittleCode.com
 
 ================
 
