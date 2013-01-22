@@ -1,0 +1,24 @@
+//
+// Dropdown Tweaks
+// --------------------------------------------------
+
+// The dropdown menu (ul)
+// -- just a few essential lines for customizing colors and borders
+// ----------------------
+.dropdown-menu {
+  padding: 5px 0;
+  margin: 0 0 0 -8px;
+  list-style: none;
+  background-color: @dropdownBackground;
+  border: 8px solid #ccc; // Fallback for IE7-8
+  border: 8px solid @navbarBackground;
+  border-top: none;
+  *border-right-width: 8px;
+  *border-bottom-width: 8px;
+  .border-radius(6px);
+  .border-top-radius(0);
+  .box-shadow(0 5px 3px rgba(0,0,0,.2));
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}

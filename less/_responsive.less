@@ -1,0 +1,59 @@
+// RESPONSIVE STYLES
+
+// Following section
+// Based on Bootstrap's Responsive.less
+// moved here so as not to re-import Bootstrap's variables and mixins over our own customized
+
+// IE10 Metro responsive
+// Required for Windows 8 Metro split-screen snapping with IE10
+// Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+
+@-ms-viewport{
+  width: device-width;
+}
+
+
+// RESPONSIVE CLASSES
+// ------------------
+
+@import "bootstrap/responsive-utilities.less";
+
+
+// MEDIA QUERIES
+// ------------------
+
+// Large desktops
+@import "bootstrap/responsive-1200px-min.less";
+
+// Tablets to regular desktops
+@import "bootstrap/responsive-768px-979px.less";
+
+// Phones to portrait tablets and narrow desktops
+@import "bootstrap/responsive-767px-max.less";
+
+
+// RESPONSIVE NAVBAR
+// ------------------
+
+// From 979px and below, show a button to toggle navbar contents
+@import "bootstrap/responsive-navbar.less";
+
+
+// NOW FOR OUR OWN
+// REPONSIVE CUSTOMIZATIONS
+// ------------------
+
+@media (max-width: @navbarCollapseWidth) {
+  // Fix top padding when using the responsive grid with the fixed topbar
+  body.top-navbar {
+    padding-top: 0;
+  }
+}
+
+@import "_0-767.less";
+
+@import "_768-979.less";
+
+@import "_980-1199.less";
+
+@import "_1200-and-up.less";

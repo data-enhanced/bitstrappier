@@ -1,124 +1,102 @@
 /*!
- * BitBootstrappier 0.9.1
+ * BitStrappier 0.9.2
  *
- * Main LESS file for BitBootstrappier
+ * Main LESS file for BitStrappier
+ *
+ * Designed to import desired Bootstrap components
+ *
+ * INCLUDES RESPONSIVE Styles (Bootstrap and Custom)
  *
  * by David Cochran
+ * http://aLittleCode.com
+ *
+ * Credits:
+ * - Bootstrap -- http://getbootstrap.com/
+ * - Fontawesome -- http://fortawesome.github.com/Font-Awesome/
  *
  */
 
 //
 // File and folder naming rationale
 //
-// bitstr- = BitStrappier custom LESS files
-// bs = current release of Twitter Bootstrap
-// bs2-2-1 = Bootstrap 2.2.1 release (in case a former version's code may work best)
-// fontaws = custom web font and icon font styles
+// _filename = custom LESS files
+// bootstrap/ = current release of Twitter Bootstrap
+// bootstrap_2-2-1/ = Bootstrap 2.2.1 release (in case a former version's code may work best)
+// fontawesome/ = custom web font and icon font styles
 //
 
 // Reset
-@import "bs/reset.less";
+@import "bootstrap/reset.less";
 
 // Variables and Mixins
-// @import "bs/variables.less"; // If you'd prefer Bootstrap's base variables
-
-		@import "bitstr-variables.less"; // BitBootstrappier custom variables
-
-@import "bs/mixins.less"; // Bootstrap's mixins
+@import "_variables.less"; // custom variables
+// @import "bootstrap/variables.less"; // If you'd prefer Bootstrap's base variables
+@import "bootstrap/mixins.less"; // Bootstrap's mixins
+@import "_mixins.less"; // for custom mixins
 
 // Grid system and page structure
-@import "bs/scaffolding.less";
-@import "bs/grid.less";
-@import "bs/layouts.less";
+@import "bootstrap/scaffolding.less";
+@import "bootstrap/grid.less";
+@import "bootstrap/layouts.less";
 
-		@import "bitstr-layout-tweaks.less"; // BitBootstrappier layout tweaks
+@import "_layout-tweaks.less"; // layout tweaks
 
 // Base CSS
-@import "bs/type.less";
-@import "bs/code.less";
-@import "bs/forms.less";
-@import "bs/tables.less";
+@import "bootstrap/type.less";
+@import "bootstrap/code.less";
+@import "bootstrap/forms.less";
+@import "bootstrap/tables.less";
 
 // Components: common
+
 // @import "sprites.less"; // commented out in favor of Icon Fonts
 
-		@import "fontaws/font-awesome.less"; // Font Awesome icon font
+@import "fontawesome/font-awesome.less"; // Font Awesome icon font
 
-@import "bs/dropdowns.less";
+@import "bootstrap/dropdowns.less";
 
-		@import "bitstr-dropdown.less"; // BitBootstrappier customization
+@import "_dropdown-tweaks.less"; // BitStrappier customization
 
-@import "bs/wells.less";
-@import "bs/component-animations.less";
-@import "bs/close.less";
+@import "bootstrap/wells.less";
+@import "bootstrap/component-animations.less";
+@import "bootstrap/close.less";
 
 // Components: Buttons & Alerts
-@import "bs/buttons.less";
-@import "bs/button-groups.less";
-@import "bs/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+@import "bootstrap/buttons.less";
+@import "bootstrap/button-groups.less";
+@import "bootstrap/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
 // Components: Nav
-@import "bs/navs.less";
-@import "bs/navbar.less";
-@import "bs/breadcrumbs.less";
-@import "bs/pagination.less";
-@import "bs/pager.less";
+@import "bootstrap/navs.less";
+@import "bootstrap/navbar.less";
+@import "bootstrap/breadcrumbs.less";
+@import "bootstrap/pagination.less";
+@import "bootstrap/pager.less";
 
 // Components: Popovers
-@import "bs/modals.less";
-@import "bs/tooltip.less";
-@import "bs/popovers.less";
+@import "bootstrap/modals.less";
+@import "bootstrap/tooltip.less";
+@import "bootstrap/popovers.less";
 
 // Components: Misc
-@import "bs/thumbnails.less";
-@import "bs/media.less";
-@import "bs/labels-badges.less";
-@import "bs/progress-bars.less";
-@import "bs/accordion.less";
-@import "bs/carousel.less";
-@import "bs/hero-unit.less";
+@import "bootstrap/thumbnails.less";
+@import "bootstrap/media.less";
+@import "bootstrap/labels-badges.less";
+@import "bootstrap/progress-bars.less";
+@import "bootstrap/accordion.less";
+@import "bootstrap/carousel.less";
+@import "bootstrap/hero-unit.less";
+
+
+// Additional Styles Specific to this App
+// ------------------
+@import "_app.less";
+
 
 // Utility classes
-@import "bs/utilities.less"; // Has to be last to override when necessary
+@import "bootstrap/utilities.less"; // Has to be last to override when necessary
 
 
 // Responsive Styles
-// -------------------------------------------------------------
-
-// IE10 Metro responsive
-// Required for Windows 8 Metro split-screen snapping with IE10
-// Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
-
-@-ms-viewport{
-  width: device-width;
-}
-
-
-// RESPONSIVE CLASSES
-// ------------------
-
-@import "bs/responsive-utilities.less";
-
-
-// MEDIA QUERIES
-// ------------------
-
-// Large desktops
-@import "bs/responsive-1200px-min.less";
-
-// Tablets to regular desktops
-@import "bs/responsive-768px-979px.less";
-
-// Phones to portrait tablets and narrow desktops
-@import "bs/responsive-767px-max.less";
-
-
-// RESPONSIVE NAVBAR
-// ------------------
-
-// From 979px and below, show a button to toggle navbar contents
-@import "bs/responsive-navbar.less";
-
-// BitBootstrappier Custom
-
-@import "bitstr-responsive.less";
+// -------------------
+@import "_responsive.less";
