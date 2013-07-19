@@ -1,5 +1,9 @@
 /*!
- * BitStrappier 0.9.2
+ * BitStrappier 0.9.3
+ *
+ * Updated to Bootstrap 2.3.2
+ *
+ * Font Awesome 3.2.1
  *
  * Main LESS file for BitStrappier
  *
@@ -25,14 +29,15 @@
 // fontawesome/ = custom web font and icon font styles
 //
 
-// Reset
-@import "bootstrap/reset.less";
 
 // Variables and Mixins
 @import "_variables.less"; // custom variables
 // @import "bootstrap/variables.less"; // If you'd prefer Bootstrap's base variables
 @import "bootstrap/mixins.less"; // Bootstrap's mixins
-@import "_mixins.less"; // for custom mixins
+@import "_mixins-custom.less"; // for custom mixins
+
+// Reset
+@import "bootstrap/reset.less";
 
 // Grid system and page structure
 @import "bootstrap/scaffolding.less";
@@ -50,13 +55,9 @@
 // Components: common
 
 // @import "sprites.less"; // commented out in favor of Icon Fonts
-
 @import "fontawesome/font-awesome.less"; // Font Awesome icon font
-
 @import "bootstrap/dropdowns.less";
-
 @import "_dropdown-tweaks.less"; // BitStrappier customization
-
 @import "bootstrap/wells.less";
 @import "bootstrap/component-animations.less";
 @import "bootstrap/close.less";
@@ -90,7 +91,8 @@
 
 // Additional Styles Specific to this App
 // ------------------
-@import "_app.less";
+@import "_banner.less";
+@import "_footer.less";
 
 
 // Utility classes
