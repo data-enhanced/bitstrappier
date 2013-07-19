@@ -27,10 +27,11 @@
 
 
 </head>
-<body class="top-navbar"><!-- class top-navbar activates top padding from app.css -->
+<body class="top-navbar"><!-- class top-navbar activates top padding from _layout-tweaks.css -->
 
   <!--[if lt IE 7]><div class="alert">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</div><![endif]-->
 
+  <header role="banner">
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -70,8 +71,9 @@
         </div><!-- /.container -->
       </div><!-- /.nav-inner -->
     </div><!-- /.navbar -->
+  </header> <!-- / role=banner -->
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
+  <!-- Main hero unit for a primary marketing message or call to action -->
     <div class="hero-unit">
       <div class="container">
         <h1><img style="padding-bottom: 12px" height="48" width="48" src="ico/apple-touch-icon-144-precomposed.png" alt="BitStrappier Icon"/>BitStrappier!</h1>
@@ -105,11 +107,11 @@
 
       <hr>
 
-      <footer>
-        <div class="container">
-          <p>&copy; Your Company 2012</p>
-        </div><!-- /.container -->
-      </footer>
+    <footer role="contentinfo">
+      <div class="container">
+        <p>&copy; Your Company 2012</p>
+      </div><!-- /.container -->
+    </footer>
 
 
 <!-- JavaScript -->
